@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* style do cadastrar.php*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -48,9 +47,8 @@ button[type="submit"],
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-    /* Adiciona margem para separar os botões */
     display: inline-block;
-    /* Garante que os botões fiquem na mesma linha */
+    
 }
 
 button[type="submit"]:hover,
@@ -71,7 +69,7 @@ button[type="submit"]:hover,
     color: red;
 }
 
-/* style.css */
+/* style do listar.php.php*/
 
 body {
     font-family: Arial, sans-serif;
@@ -162,4 +160,76 @@ h2 {
 
 .error-message {
     color: red;
+}
+
+/* style do editar.php*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.btn-voltar {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3;
 }

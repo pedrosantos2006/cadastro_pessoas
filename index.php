@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Pessoas</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -51,7 +51,7 @@
     <script>
     $(document).ready(function() {
         $('#form-cadastro').submit(function(e) {
-            e.preventDefault(); // Evita o envio padrão do formulário
+            e.preventDefault(); 
 
             $.ajax({
                 type: 'POST',
@@ -59,7 +59,7 @@
                 data: $('#form-cadastro').serialize(),
                 success: function(response) {
                     $('#mensagem').html('<p class="success-message">Usuário cadastrado com sucesso!</p>');
-                    $('#form-cadastro')[0].reset(); // Limpa o formulário após o cadastro
+                    $('#form-cadastro')[0].reset(); 
                 },
                 error: function(xhr, status, error) {
                     $('#mensagem').html('<p class="error-message">Erro ao cadastrar usuário: ' + xhr.responseText + '</p>');
